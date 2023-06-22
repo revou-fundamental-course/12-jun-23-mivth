@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <!-- hero section -->
+    <section class="banner">
+        <main>
+            <h1 class="logo">Temper.</h1>
+        </main>
+    </section>
+    <!-- hero section end -->
+
+    <!-- input section -->
+    <h3>Temperature Converter</h3>
+    <div class="input">
+        <section class="inputSection">
+            <select id="input" class="labels">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <input type="number" inputmode="numeric" id="inputValue" />
+        </section>
+        <button class="reverse">
+            <span class="material-symbols-rounded">
+                swap_horiz
+            </span>
+        </button>
+        <section class="resultSection">
+            <select id="output" class="labels">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <input type="number" inputmode="numeric" id="resultValue" />
+        </section>
+    </div>
+    <div class="inputButtonSection">
+        <button class="convert" onclick="convertTemperature()">
+            <span class="material-symbols-rounded">
+                sync
+            </span>
+            <span>
+                Convert
+            </span>
+        </button>
+        <button class="reset" onclick="reset()">
+            <span class="material-symbols-rounded">
+                undo
+            </span>
+            <span>
+                Reset
+            </span>
+        </button>
+    </div>
+    <!-- input section end -->
+
+    <!-- formula section -->
+    <div class="formulaSection">
+        <h3>How does Temperature Conversion works?</h3><br>
+        <p class="description">
+            The temperature of an object will have a different value when measured on a different scale.<br>
+            Each scale has a different formula if you want to convert it to another scale.<br>
+            And from your input the calculation will be:
+        </p>
+        <div class="formula">
+            <h4>Converting Celsius to Fahrenheit formula:</h4>
+            <h4>&degF = (&degC x 1,8) + 32</h4>
+            <h4>&degF = (<var id="C">C</var> x 1,8) + 32</h4>
+            <h4>Converting Fahrenheit to Celsius formula:</h4>
+            <h4>&degC = (&degF - 32) x 1,8</h4>
+            <h4>&degC = (<var id="F">F</var> - 32) x 1,8</h4>
+        </div>
+    </div>
+    <!-- formula section end -->
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

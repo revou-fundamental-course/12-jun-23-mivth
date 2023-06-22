@@ -1,0 +1,168 @@
+*, html {
+    margin: 0px;
+    padding: 0px;
+    font-family:'Plus Jakarta Sans', 'sans-serif';
+}
+
+/* hero section */
+.banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url('../assets/banner1.png');
+    display: flex;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.logo {
+    padding: 80px;
+    padding-top: 30px;
+    font-size: 100px;
+    color: white;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.temp {
+    font-weight: bolder;
+    padding-left: 80px;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+}
+/* hero section end */
+
+/* input section */
+h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #303030;
+    padding-bottom: 24px;
+}
+.input {
+    height: 200px;
+    width: 100vw;
+    content: '';
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.labels {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 24px;
+    padding: 24px;
+    color: #303030;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.inputSection {
+    width: 500px;
+    height: 200px;
+    margin: 8px;
+}
+.resultSection {
+    width: 500px;
+    height: 200px;
+    margin: 8px;
+}
+#inputValue {
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    background-color: #E7F4F9;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#resultValue {
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    background-color: #E7F4F9;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.reverse {
+    height: 50px;
+    width: 50px;
+    margin: 24px;
+    font-size: 16px;
+    color: #303030;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+/* input section end */
+
+/* cta */
+.inputButtonSection {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.convert {
+    height: 50px;
+    width: 200px;
+    margin-inline: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #8BC8E1;
+}
+.reset {
+    height: 50px;
+    width: 200px;
+    margin-inline: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #DB5A42;
+}
+.material-symbols-rounded {
+    font-variation-settings: 'wght' 300;
+}
+/* cta end */
+
+/* formula section */
+.formulaSection {
+    width: 100vw;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description {
+    text-align: center;
+    color: #303030;
+}
+.formula {
+    background-color: #8BC8E1;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    color: #303030;
+    margin: 24px;
+    padding: 18px;
+}
+/* formula section end */
